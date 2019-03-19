@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/apple/Documents/Projects/videos/flutters/fl_uberapp/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
+            "map": [
+                {
+                    "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/ceac95f14f4318a17d6963f0d5234957/res/values-en-rAU/values-en-rAU.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/apple/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.6.6/android/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/apple/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.6.6/android/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/apple/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.6.6/android/src/main/AndroidManifest.xml:1:1-3:12
+	package
+		ADDED from /Users/apple/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.6.6/android/src/main/AndroidManifest.xml:2:3-44
+		INJECTED from /Users/apple/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.6.6/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/apple/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.6.6/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/apple/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.6.6/android/src/main/AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from /Users/apple/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.6.6/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/apple/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.6.6/android/src/main/AndroidManifest.xml
+INJECTED from /Users/apple/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.6.6/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/apple/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.6.6/android/src/main/AndroidManifest.xml
+		ADDED from /Users/apple/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.6.6/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/apple/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.6.6/android/src/main/AndroidManifest.xml
