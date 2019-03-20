@@ -19,7 +19,7 @@ class _RegisterPageState extends State<RegisterPage> {
               SizedBox(
                 height: 140,
               ),
-              Image.asset('ic_red_car.png'),
+              Image.asset('ic_car_red.png'),
               Padding(
                 padding: const EdgeInsets.fromLTRB(0, 40, 0, 6),
                 child: Text(
