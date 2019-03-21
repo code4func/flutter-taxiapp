@@ -3704,6 +3704,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --------------------------------------------------------------------------------
 firebase_auth
 firebase_core
+firebase_database
 
 // Copyright 2017 The Chromium Authors. All rights reserved.
 //

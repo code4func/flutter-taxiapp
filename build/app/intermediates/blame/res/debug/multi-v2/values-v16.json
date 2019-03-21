@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/apple/Documents/Projects/videos/flutters/fl_uberapp/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/Users/apple/Documents/Projects/videos/flutters/taxiapp/fl_uberapp/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/ceac95f14f4318a17d6963f0d5234957/res/values-v16/values-v16.xml",
+                    "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/core-1.0.0-rc01.aar/c2d48153298a51f861e592d6b8bfc45a/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,27 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/apple/Documents/Projects/videos/flutters/fl_uberapp/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-be/values-be.xml",
+            "outputFile": "/Users/apple/Documents/Projects/videos/flutters/taxiapp/fl_uberapp/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-be/values-be.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/ceac95f14f4318a17d6963f0d5234957/res/values-be/values-be.xml",
+                    "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/core-1.0.0-rc01.aar/c2d48153298a51f861e592d6b8bfc45a/res/values-be/values-be.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
-                        "endColumns": "108",
-                        "endOffsets": "159"
+                        "endColumns": "100",
+                        "endOffsets": "151"
                     },
                     "to": {
                         "startLines": "20",
                         "startColumns": "4",
                         "startOffsets": "2826",
-                        "endColumns": "108",
-                        "endOffsets": "2930"
+                        "endColumns": "100",
+                        "endOffsets": "2922"
                     }
                 },
                 {
-                    "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/e9a6cec2f9904cd381e9c164bee9b362/res/values-be/values.xml",
+                    "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.1.0.aar/914471db773da8c3308c0149d4678b5f/res/values-be/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/55b7a9a207377ed203a9228d2ec1899f/res/values-be/values.xml",
+                    "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/76d6730025ce92846ececf768582fafa/res/values-be/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

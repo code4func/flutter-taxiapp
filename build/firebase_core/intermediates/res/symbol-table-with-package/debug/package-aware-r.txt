@@ -1,7 +1,9 @@
 io.flutter.plugins.firebase.core
+attr alpha
 attr buttonSize
 attr circleCrop
 attr colorScheme
+attr coordinatorLayoutStyle
 attr font
 attr fontProviderAuthority
 attr fontProviderCerts
@@ -10,10 +12,20 @@ attr fontProviderFetchTimeout
 attr fontProviderPackage
 attr fontProviderQuery
 attr fontStyle
+attr fontVariationSettings
 attr fontWeight
 attr imageAspectRatio
 attr imageAspectRatioAdjust
+attr keylines
+attr layout_anchor
+attr layout_anchorGravity
+attr layout_behavior
+attr layout_dodgeInsetEdges
+attr layout_insetEdge
+attr layout_keyline
 attr scopeUris
+attr statusBarBackground
+attr ttcIndex
 bool abc_action_bar_embed_tabs
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
@@ -38,6 +50,8 @@ dimen compat_button_inset_vertical_material
 dimen compat_button_padding_horizontal_material
 dimen compat_button_padding_vertical_material
 dimen compat_control_corner_material
+dimen compat_notification_large_icon_max_height
+dimen compat_notification_large_icon_max_width
 dimen notification_action_icon_size
 dimen notification_action_text_size
 dimen notification_big_circle_margin
@@ -53,6 +67,10 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen subtitle_corner_radius
+dimen subtitle_outline_width
+dimen subtitle_shadow_offset
+dimen subtitle_shadow_radius
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -97,9 +115,11 @@ id adjust_width
 id async
 id auto
 id blocking
+id bottom
 id cancel_action
 id chronometer
 id dark
+id end
 id end_padder
 id forever
 id icon
@@ -107,6 +127,7 @@ id icon_group
 id icon_only
 id info
 id italic
+id left
 id light
 id line1
 id line3
@@ -116,14 +137,20 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id right
 id right_icon
 id right_side
 id standard
+id start
 id status_bar_latest_event_content
+id tag_transition_group
+id tag_unhandled_key_event_manager
+id tag_unhandled_key_listeners
 id text
 id text2
 id time
 id title
+id top
 id wide
 integer cancel_button_image_alpha
 integer google_play_services_version
@@ -174,7 +201,13 @@ style TextAppearance_Compat_Notification_Title
 style TextAppearance_Compat_Notification_Title_Media
 style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
+style Widget_Support_CoordinatorLayout
+styleable ColorStateListItem alpha android_alpha android_color
+styleable CoordinatorLayout keylines statusBarBackground
+styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery
-styleable FontFamilyFont font fontStyle fontWeight
+styleable FontFamilyFont android_font android_fontStyle android_fontVariationSettings android_fontWeight android_ttcIndex font fontStyle fontVariationSettings fontWeight ttcIndex
+styleable GradientColor android_centerColor android_centerX android_centerY android_endColor android_endX android_endY android_gradientRadius android_startColor android_startX android_startY android_tileMode android_type
+styleable GradientColorItem android_color android_offset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
 styleable SignInButton buttonSize colorScheme scopeUris
