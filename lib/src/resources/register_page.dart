@@ -1,6 +1,8 @@
 import 'package:fl_uberapp/src/blocs/auth_bloc.dart';
+import 'package:fl_uberapp/src/resources/dialog/loading_dialog.dart';
 import 'package:fl_uberapp/src/resources/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:fl_uberapp/src/resources/dialog/msg_dialog.dart';
 
 class RegisterPage extends StatefulWidget {
   @override
@@ -164,10 +166,17 @@ class _RegisterPageState extends State<RegisterPage> {
         _passController.text, _phoneController.text);
     if (isValid) {
       // create user
+      // loading dialog
+      LoadingDialog.showLoadingDialog(context, 'Loading...');
       authBloc.signUp(_emailController.text, _passController.text,
           _phoneController.text, _nameController.text, () {
+        LoadingDialog.hideLoadingDialog(context);
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => HomePage()));
+      }, (msg) {
+        LoadingDialog.hideLoadingDialog(context);
+        MsgDialog.showMsgDialog(context, "Sign-In", msg);
+        // show msg dialog
       });
     }
   }
