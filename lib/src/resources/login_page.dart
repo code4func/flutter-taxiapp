@@ -1,6 +1,6 @@
 import 'package:fl_uberapp/src/app.dart';
 import 'package:fl_uberapp/src/resources/dialog/loading_dialog.dart';
-import 'package:fl_uberapp/src/resources/dialog/msg_dialog.dart';
+import 'package:fl_uberapp/src/resources/dialog/msg_dilog.dart';
 import 'package:fl_uberapp/src/resources/home_page.dart';
 import 'package:fl_uberapp/src/resources/register_page.dart';
 import 'package:flutter/gestures.dart';

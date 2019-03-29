@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>671419424243-5l49lpue30hrgovlslso94rfancrhgij.apps.googleusercontent.com</string>
+	<string>968847685657-o2l30kdq63b3b8b88npiqf4n90senn3v.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.671419424243-5l49lpue30hrgovlslso94rfancrhgij</string>
+	<string>com.googleusercontent.apps.968847685657-o2l30kdq63b3b8b88npiqf4n90senn3v</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDyvTm1hQ4IfxQ_asWWBOlHyiO2UuVmTl4</string>
+	<string>AIzaSyDLs1iyBa2NTx4k29OZ2kVEl2v1XSdTPJU</string>
 	<key>GCM_SENDER_ID</key>
-	<string>671419424243</string>
+	<string>968847685657</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>code4func.com.flUberapp</string>
 	<key>PROJECT_ID</key>
-	<string>taxiapp-f8161</string>
+	<string>taxiapp-235917</string>
 	<key>STORAGE_BUCKET</key>
-	<string>taxiapp-f8161.appspot.com</string>
+	<string>taxiapp-235917.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:671419424243:ios:f647c23e161180a1</string>
+	<string>1:968847685657:ios:f647c23e161180a1</string>
 	<key>DATABASE_URL</key>
-	<string>https://taxiapp-f8161.firebaseio.com</string>
+	<string>https://taxiapp-235917.firebaseio.com</string>
 </dict>
 </plist>

@@ -1,8 +1,8 @@
 import 'package:fl_uberapp/src/blocs/auth_bloc.dart';
 import 'package:fl_uberapp/src/resources/dialog/loading_dialog.dart';
+import 'package:fl_uberapp/src/resources/dialog/msg_dilog.dart';
 import 'package:fl_uberapp/src/resources/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:fl_uberapp/src/resources/dialog/msg_dialog.dart';
 
 class RegisterPage extends StatefulWidget {
   @override

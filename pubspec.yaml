@@ -46,6 +46,17 @@ flutter:
     - ic_lock.png
     - ic_mail.png
     - ic_phone.png
+    - ic_location_black.png
+    - ic_map_nav.png
+    - ic_notify.png
+    - ic_remove_x.png
+    - ic_menu.png
+    - ic_menu_help.png
+    - ic_menu_history.png
+    - ic_menu_logout.png
+    - ic_menu_notify.png
+    - ic_menu_percent.png
+    - ic_menu_user.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
