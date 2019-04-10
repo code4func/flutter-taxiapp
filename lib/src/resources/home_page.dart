@@ -1,6 +1,8 @@
 import 'package:fl_uberapp/src/model/place_item_res.dart';
 import 'package:fl_uberapp/src/model/step_res.dart';
+import 'package:fl_uberapp/src/model/trip_info_res.dart';
 import 'package:fl_uberapp/src/repository/place_service.dart';
+import 'package:fl_uberapp/src/resources/widgets/car_pickup.dart';
 import 'package:fl_uberapp/src/resources/widgets/home_menu.dart';
 import 'package:fl_uberapp/src/resources/widgets/ride_picker.dart';
 import 'package:flutter/material.dart';
@@ -13,6 +15,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   var _scaffoldKey = new GlobalKey<ScaffoldState>();
+  var _tripDistance = 0;
   final Map<String, Marker> _markers = <String, Marker>{};
 
   GoogleMapController _mapController;
@@ -67,6 +70,10 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+            Positioned(left: 20, right: 20, bottom: 40,
+              height: 248,
+              child: CarPickup(_tripDistance),
+            )
           ],
         ),
       ),
@@ -107,19 +114,27 @@ class _HomePageState extends State<HomePage> {
       var fromLatLng = _markers["from_address"].options.position;
       var toLatLng = _markers["to_address"].options.position;
 
-      LatLng s, n;
-      if (fromLatLng.latitude <= toLatLng.latitude) {
-        s = fromLatLng;
-        n = toLatLng;
+      var sLat, sLng, nLat, nLng;
+      if(fromLatLng.latitude <= toLatLng.latitude) {
+        sLat = fromLatLng.latitude;
+        nLat = toLatLng.latitude;
       } else {
-        n = fromLatLng;
-        s = toLatLng;
+        sLat = toLatLng.latitude;
+        nLat = fromLatLng.latitude;
       }
 
-      LatLngBounds bounds = LatLngBounds(northeast: n, southwest: s);
-      _mapController.moveCamera(CameraUpdate.newLatLngBounds(bounds, 50));
+      if(fromLatLng.longitude <= toLatLng.longitude) {
+        sLng = fromLatLng.longitude;
+        nLng = toLatLng.longitude;
+      } else {
+        sLng = toLatLng.longitude;
+        nLng = fromLatLng.longitude;
+      }
+
+      LatLngBounds bounds = LatLngBounds(northeast: LatLng(nLat, nLng), southwest: LatLng(sLat, sLng));
+      _mapController.animateCamera(CameraUpdate.newLatLngBounds(bounds, 50));
     } else {
-      _mapController.moveCamera(CameraUpdate.newLatLng(
+      _mapController.animateCamera(CameraUpdate.newLatLng(
           _markers.values.elementAt(0).options.position));
     }
   }
@@ -134,7 +149,12 @@ class _HomePageState extends State<HomePage> {
       PlaceService.getStep(
               from.latitude, from.longitude, to.latitude, to.longitude)
           .then((vl) {
-        List<StepsRes> rs = vl;
+            TripInfoRes infoRes = vl;
+
+            _tripDistance = infoRes.distance;
+            setState(() {
+            });
+        List<StepsRes> rs = infoRes.steps;
         List<LatLng> paths = new List();
         for (var t in rs) {
           paths
@@ -144,7 +164,7 @@ class _HomePageState extends State<HomePage> {
 
 //        print(paths);
         _mapController.addPolyline(PolylineOptions(
-            points: paths, color: Color(0xFF3ADF00).value, width: 4));
+            points: paths, color: Color(0xFF3ADF00).value, width: 10));
       });
     }
   }

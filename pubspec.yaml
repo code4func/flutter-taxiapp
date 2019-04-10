@@ -61,6 +61,10 @@ flutter:
     - ic_menu_notify.png
     - ic_menu_percent.png
     - ic_menu_user.png
+    - ic_pickup_hatchback.png
+    - ic_pickup_sedan.png
+    - ic_pickup_suv.png
+    - ic_pickup_van.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

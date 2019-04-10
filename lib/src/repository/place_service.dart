@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:fl_uberapp/src/config/configs.dart';
 import 'package:fl_uberapp/src/model/place_item_res.dart';
 import 'package:fl_uberapp/src/model/step_res.dart';
+import 'package:fl_uberapp/src/model/trip_info_res.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -58,15 +59,21 @@ class PlaceService {
         throw new Exception(res);
       }
 
-      List<StepsRes> steps;
+
+      TripInfoRes tripInfoRes;
       try {
-        steps =
-            _parseSteps(_decoder.convert(res)["routes"][0]["legs"][0]["steps"]);
+        var json = _decoder.convert(res);
+        int distance = json["routes"][0]["legs"][0]["distance"]["value"];
+        List<StepsRes> steps =
+            _parseSteps(json["routes"][0]["legs"][0]["steps"]);
+
+        tripInfoRes = new TripInfoRes(distance, steps);
+
       } catch (e) {
         throw new Exception(res);
       }
 
-      return steps;
+      return tripInfoRes;
     });
   }
 
