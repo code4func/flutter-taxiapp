@@ -103,8 +103,8 @@ class _RidePickerPageState extends State<RidePickerPage> {
                           shrinkWrap: true,
                           itemBuilder: (context, index) {
                             return ListTile(
-                              title: Text(places.elementAt(index).name),
-                              subtitle: Text(places.elementAt(index).address),
+                              title: Text(places.elementAt(index).name == null ? '' : Text(places.elementAt(index).name),
+                              subtitle: Text(places.elementAt(index).address == null ? '' : Text(places.elementAt(index).address),
                               onTap: () {
                                 print("on tap");
                                 Navigator.of(context).pop();
